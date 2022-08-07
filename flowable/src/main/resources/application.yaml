@@ -1,5 +1,5 @@
 spring:
   datasource:
     username: root
-    password: 123
+    password:
     url: jdbc:mysql:///flowable?serverTimezone=Asia/Shanghai&useSSL=false

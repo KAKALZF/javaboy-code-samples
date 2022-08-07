@@ -10,7 +10,7 @@
     <startEvent id="startLeave" name="开始"/>
     <sequenceFlow id="flowStart" sourceRef="startLeave" targetRef="leaveTask"/>
     <sequenceFlow id="modeFlow" sourceRef="leaveTask" targetRef="zuzhangTask"/>
-<!--    <sequenceFlow id="zuzhangJudeFlow" sourceRef="zuzhangTask" targetRef="zuzhangJudeTask"/>-->
+    <!--    <sequenceFlow id="zuzhangJudeFlow" sourceRef="zuzhangTask" targetRef="zuzhangJudeTask"/>-->
     <sequenceFlow id="zuzhang_go" sourceRef="zuzhangJudeTask" targetRef="managerTask" name="通过">
       <conditionExpression xsi:type="tFormalExpression"><![CDATA[${checkResult=='通过'}]]></conditionExpression>
     </sequenceFlow>
@@ -85,7 +85,6 @@
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge-1874d8d5-61b6-449b-afc9-bd0dc8cb159b" bpmnElement="zuzhang_reject">
         <omgdi:waypoint x="705.0" y="182.0"/>
-        <omgdi:waypoint x="704.99994" y="181.99998"/>
         <omgdi:waypoint x="705.0" y="192.0"/>
         <omgdi:waypoint x="705.0" y="257.50006"/>
       </bpmndi:BPMNEdge>
